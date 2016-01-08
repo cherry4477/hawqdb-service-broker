@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+  datasource:
+    url: ${MASTER_JDBC_URL}
+    test-on-borrow: true
+    remove-abandoned: true
+    validation-query: SELECT 1

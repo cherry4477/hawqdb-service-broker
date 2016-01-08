@@ -1,0 +1,8 @@
+---
+applications:
+- name: hawqdb-broker
+  memory: 1024M
+  instances: 1
+  path: build/libs/hawqdb-service-broker.jar
+  env:
+    MASTER_JDBC_URL: jdbc:postgresql://52.77.242.28:10432/gpadmin?user=gpadmin&password=gpadmin
